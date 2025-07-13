@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Goforit s.r.o. | Bezkartáčové automyčky</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f9fbfc;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(90deg, #0066cc, #00c4ff);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background: #003e70;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      margin: 10px 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #0066cc;
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      color: #00c4ff;
+      margin-top: 10px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border-radius: 8px;
+      border: none;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+    }
+
+    th {
+      background-color: #0066cc;
+      color: white;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    .button {
+      background: linear-gradient(to right, #0066cc, #00c4ff);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #003e70;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      iframe { height: 250px; }
+      header h1 { font-size: 1.8em; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Goforit s.r.o.</h1>
+  <p>Automyčky nové generace – ve spolupráci s CBK</p>
+</header>
+
+<nav>
+  <a href="#vyhody">Výhody</a>
+  <a href="#technologie">Technologie</a>
+  <a href="#video">Video</a>
+  <a href="#cenik">Ceník</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<section id="vyhody">
+  <h2>🚗 Výhody našich automyček</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>✅ Plná automatizace</h3>
+      <p>Bez obsluhy, zákazník pouze zvolí program – zbytek obstará inteligentní systém.</p>
+    </div>
+    <div class="card">
+      <h3>💧 Šetrnost k laku</h3>
+      <p>Bezkontaktní technologie je ideální pro luxusní a sportovní vozy.</p>
+    </div>
+    <div class="card">
+      <h3>⚡ Rychlost</h3>
+      <p>Efektivní mycí cyklus trvá méně než 5 minut – skvělá průchodnost provozu.</p>
+    </div>
+    <div class="card">
+      <h3>🎯 Modularita</h3>
+      <p>Možnost přizpůsobit systém vašim firemním potřebám – včetně žetonů a slev.</p>
+    </div>
+  </div>
+</section>
+
+<section id="technologie">
+  <h2>🧠 Technologie CBK</h2>
+  <p>
+    Spolupracujeme se světovým lídrem CBK v oblasti automatizace mycích systémů. Tato technologie zatím není v České republice běžně dostupná – nabízíme vám jedinečnou příležitost stát se inovátorem ve svém regionu.
+  </p>
+</section>
+
+<section id="video">
+  <h2>🎬 Video ukázka</h2>
+  <p>Moderní bezkontaktní automyčka v akci:</p>
+  <iframe src="https://www.youtube.com/embed/CHIDf0au9Ww" allowfullscreen></iframe>
+</section>
+
+<section id="cenik">
+  <h2>📋 Ceník</h2>
+  <table>
+    <tr><th>Program</th><th>Popis</th><th>Cena</th></tr>
+    <tr><td>Základní</td><td>Oplach, pěna, sušení</td><td>100 Kč</td></tr>
+    <tr><td>Pokročilý</td><td>Aktivní pěna + vosk</td><td>150 Kč</td></tr>
+    <tr><td>Premium</td><td>Keramická ochrana pro luxusní vozy</td><td>200 Kč</td></tr>
+  </table>
+</section>
+
+<section id="kontakt">
+  <h2>📩 Kontaktujte nás</h2>
+  <form action="mailto:goforit@atlas.cz" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Vaše jméno" required />
+    <input type="email" name="email" placeholder="Váš e-mail" required />
+    <textarea name="message" rows="4" placeholder="Vaše zpráva" required></textarea>
+    <button type="submit" class="button">Odeslat zprávu</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 Goforit s.r.o. | Revoluce v mytí automobilů | Email: goforit@atlas.cz
+</footer>
+
+</body>
+</html>
